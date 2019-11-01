@@ -6,9 +6,9 @@
 
     <data>
 
-        <import type="com.geetol.myapplication.TestMode" />
+        <import type="com.lp.work.TestMode" />
 
-        <import type="com.geetol.myapplication.MainActivity.UserPresenter" />
+        <import type="com.lp.work.MainActivity.UserPresenter" />
 
         <import type="android.view.View" />
 
