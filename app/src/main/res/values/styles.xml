@@ -8,4 +8,5 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppWelcome" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
 </resources>
