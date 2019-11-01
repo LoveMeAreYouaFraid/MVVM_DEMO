@@ -17,4 +17,6 @@ public class BaseActivity extends AppCompatActivity {
         activity = this;
         mContext = this;
     }
+
+
 }

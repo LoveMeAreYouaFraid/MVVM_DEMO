@@ -23,9 +23,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity
-            android:name=".view.main.WelcomeActivity"
-            android:theme="@style/AppWelcome">
+        <activity android:name=".view.main.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

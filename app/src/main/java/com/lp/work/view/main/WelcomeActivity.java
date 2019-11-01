@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,6 +23,13 @@ public class WelcomeActivity extends BaseActivity {
         binding = DataBindingUtil.setContentView(this, R.layout.welcome_activity);
         handler.sendEmptyMessageDelayed(1, 1000);
         binding.splashBtn.setText("3");
+        binding.splashBtn.setOnClickListener(view -> {
+            handler.removeMessages(1);
+            handler.removeMessages(2);
+            handler.removeMessages(3);
+            startActivity(new Intent(mContext, MainActivity.class));
+            finish();
+        });
     }
 
     private Handler handler = new Handler(new Handler.Callback() {
@@ -38,6 +46,7 @@ public class WelcomeActivity extends BaseActivity {
                     break;
                 case 3:
                     startActivity(new Intent(mContext, MainActivity.class));
+                    finish();
                     break;
             }
             return false;
